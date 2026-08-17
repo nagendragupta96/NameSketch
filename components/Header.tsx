@@ -1,0 +1,1 @@
+export function Header() { return <header className="header"><a className="brand" href="#" aria-label="NameSketch home"><span className="mark">N</span>NameSketch</a><div className="private"><span>●</span> 100% private &amp; local</div><a className="how" href="#how">How it works</a></header> }
