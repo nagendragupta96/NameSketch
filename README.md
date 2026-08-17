@@ -23,8 +23,6 @@ Open `http://localhost:3000`. Production validation uses `npm run lint`, `npm te
 4. Only glyphs are drawn to the output canvas. Color mode samples local source color; monochrome maps brightness to ink intensity.
 5. High-quality export reruns the renderer at 2× rather than stretching its preview.
 
-By default, **Person only** placement estimates a foreground matte from the colors around the image border and clips every letter to that silhouette. The adjustable Subject edge control helps with unusually similar foreground and background colors. Full image placement remains available for landscapes or intentionally edge-to-edge artwork. This lightweight approach stays completely local and does not download an AI model or send the portrait to a segmentation service.
-
 Browser orientation-aware `createImageBitmap` normalizes EXIF orientation before preview, comparison, rendering, and export. Temporary bitmaps and canvas buffers are released. Unsupported Live Photo video assets receive a still-photo prompt. DNG/RAW is intentionally not supported.
 
 ## Formats and privacy
