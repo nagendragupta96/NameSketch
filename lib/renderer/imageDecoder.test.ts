@@ -1,0 +1,2 @@
+import {describe,expect,it} from "vitest";import {detectImageFormat} from "./imageDecoder";
+describe("image format detection",()=>{it.each([["IMG_1234.HEIC","","heic"],["IMG_1234.heic","application/octet-stream","heic"],["photo.HEIF","","heif"],["portrait.jpeg","image/jpeg","jpeg"],["portrait.webp","image/webp","webp"],["raw.dng","image/x-adobe-dng","raw"]])("detects %s",(name,type,expected)=>expect(detectImageFormat({name,type})).toBe(expected))});
